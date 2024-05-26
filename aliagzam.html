@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliagzam</title>
+    
+    <!-- Стили для анимации кругов на фоне и другие стили -->
+    <style>
+        /* Анимация для кругового фона */
+        body {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        /* Круговой фон */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+            background: radial-gradient(circle, rgba(0, 0, 255, 0.3) 10%, rgba(0, 0, 255, 0.15) 30%, rgba(0, 0, 255, 0) 50%);
+            background-size: 200% 200%;
+            animation: animateBackground 20s linear infinite;
+        }
+
+        @keyframes animateBackground {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        /* Основные стили */
+        header {
+            text-align: center;
+            color: white;
+            animation: fadeIn 1s ease-out forwards; /* Анимация появления заголовка */
+        }
+
+        h1 {
+            color: #FF5733; /* Красно-оранжевый цвет для h1 */
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        body {
+            font-family: 'pacifico', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        .logo {
+            max-width: 150px; /* Максимальная ширина логотипа */
+            margin-top: 20px; /* Отступ сверху для логотипа */
+        }
+
+        section {
+            text-align: center;
+            margin: 20px 0;
+            color: #FFFFFF;
+            animation: fadeIn 1s ease-out forwards; /* Анимация появления секции */
+        }
+
+        .button-wrapper {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        button {
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: transparent;
+            border: 2px solid #FF5733;
+            border-radius: 10px;
+            color: white;
+            cursor: pointer;
+            animation: fadeIn 1s ease-out forwards;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF5733;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none; 
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Анимированный фон с круговой анимацией -->
+    <div class="background"></div>
+
+    <!-- Заголовок страницы -->
+    <header>
+        <img src="Picsart_24-01-26_17-03-22-889-1.png" alt="Логотип" class="logo">
+        <h1>AGZAMXONOV MUHAMMADALI</h1>
+        <hr>
+        <p><i>Step into my personal digital space, a warm welcome awaits you on my website!</i></p>
+    </header>
+  
+
+<!-- Раздел с кнопками -->
+    <section>
+        <!-- Кнопки с ссылками на различные разделы -->
+        <div class="button-wrapper">
+            <a href="About me/about_me.html" target="_blank">
+                <button>Discover more about me</button>
+            </a>
+        </div>
+        <div class="button-wrapper">
+            <a href="Education/education.html" target="_blank">
+                <button>Education</button>
+            </a>
+        </div>
+        <div class="button-wrapper">
+            <a href="Experience/experience/experience.html" target="_blank">
+                <button>Work Experience</button>
+            </a>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Контактная информация -->
+    <h3><sub><big>Contact</big></sub>
+    <p><small>Feel free to reach out to me at <a href="mailto:aliagzamxonove@gmail.com">aliagzamxonove@gmail.com</small></a></p></h3>
+
+    <!-- Подвал страницы -->
+    <footer>
+        <p>&copy; 2024 Aliagzamxonov Muhammadali. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
